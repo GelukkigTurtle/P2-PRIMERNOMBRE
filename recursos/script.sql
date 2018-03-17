@@ -28,6 +28,7 @@ CREATE TABLE `Genio` (
   `idGenio` int(11) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(45) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `nacimiento` int(11) DEFAULT NULL,
+  `profesion` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`idGenio`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -38,7 +39,7 @@ CREATE TABLE `Genio` (
 
 LOCK TABLES `Genio` WRITE;
 /*!40000 ALTER TABLE `Genio` DISABLE KEYS */;
-INSERT INTO `Genio` VALUES (1,'Albert Einstein',1879),(2,'Nikola Tesla',1856),(3,'Alan Turing',1912),(4,'Ada Lovelace',1852),(5,'Linus Torvalds',1969),(6,'Dennis Ritchie',1941),(7,'Elon Musk',1971);
+INSERT INTO `Genio` VALUES (1,'Albert Einstein',1879,NULL),(2,'Nikola Tesla',1856,NULL),(3,'Alan Turing',1912,NULL),(4,'Ada Lovelace',1852,NULL),(5,'Linus Torvalds',1969,NULL),(6,'Dennis Ritchie',1941,NULL),(7,'Elon Musk',1971,NULL);
 /*!40000 ALTER TABLE `Genio` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -51,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-03-17  1:14:05
+-- Dump completed on 2018-03-17  1:30:46
